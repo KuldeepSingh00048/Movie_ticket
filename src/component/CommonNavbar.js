@@ -13,7 +13,7 @@ const CommonNavbar = () => {
     
     return (
         <div className='shadow-md w-full fixed top-0 left-0'>
-            <div className='md:flex items-center justify-between bg-gradient-to-r from-yellow-300 to-yellow-200 py-4 md:px-10 px-7'>
+            <div className='md:flex items-center justify-between bg-yellow-300 py-4 md:px-10 px-7'>
                 <div className='font-extrabold text-3xl rounded-bl-xl p-2 w-auto rounded-tr-xl border-green-900 border-2 text-green-900 cursor-pointer flex items-center font-[Poppins]'>
                     KD-Book-Movies
                 </div>
@@ -22,7 +22,7 @@ const CommonNavbar = () => {
                     {open ? <MdClose/> : <MdReorder/>}
                 </div>
 
-                <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute bg-yellow-200 md:static  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
+                <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute bg-yellow-300 md:static  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
                     {
                         Links.map((link) => (
                             <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7 '>
